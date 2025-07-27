@@ -32,7 +32,7 @@ USE Pizza_hut;
 ```
 
  **Using Four taables  we have Four tables 
-Insetet using table wizard tool**
+InseRtet using table wizard tool**
 ```
 select * from orders;
 select * from orders_details;
