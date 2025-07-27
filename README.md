@@ -31,9 +31,9 @@ CREATE DATABASE Pizza_hut;
 USE Pizza_hut;
 ```
 
+ **Using Four taables  we have Four tables 
+Insetet using table wizard tool**
 ```
--- Using Four taables  we have Four tables 
--- Insetet using table wizard tool
 select * from orders;
 select * from orders_details;
 SELECT * FROM pizzas;
@@ -189,7 +189,7 @@ types based on revenue.**
 	GROUP BY pizza_types.category ORDER BY revenue DESC;
 ```
    
--- Q2: Analyze the cumulative revenue generated over time.
+ Q2: **Analyze the cumulative revenue generated over time.**
 ```
 	SELECT order_date,
 		ROUND(sum(revenue) OVER( ORDER BY order_date),2) AS cumu_revenue
@@ -205,7 +205,7 @@ types based on revenue.**
 	AS Sales;
 ```
 
-Q3: **Determine the top 3 most ordered pizza types  based on revenue for each pizza category.**
+Q3. **Determine the top 3 most ordered pizza types  based on revenue for each pizza category.**
 ```
 	SELECT category, name, revenue
 	FROM 
